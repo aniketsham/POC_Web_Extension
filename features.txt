@@ -1,0 +1,64 @@
+Features of the Web Extension
+1. User Authentication (Login System)
+    * Users can log in to the extension using their credentials.
+    * Authentication ensures only authorized users can access the extension's features.
+    
+2. JWT Token Verification
+    * The extension uses JWT (JSON Web Tokens) to verify user identity and maintain secure sessions.
+    * Ensures that only authenticated users can perform operations like fetching data or accessing protected features.
+
+3. Data Fetching from APIs
+    * The extension retrieves data from web services using APIs.
+    * Fetched data is displayed on the extension's interface and stored locally for quick access.
+
+4. Drawer Overlay via Content Scripts
+    * A drawer overlay (side panel) is displayed directly on specific web pages.
+    * This is achieved using a content script, which allows the extension to inject custom UI into webpages.
+
+5. Tab Management using Background Services
+    * The extension tracks open tabs and identifies the currently active tab.
+    * This background service helps display the total number of open tabs and the active tab's details.
+
+6. Local Storage for User Data
+    * User details, active tabs, and API-fetched data are stored using the browser's local storage.
+    * This allows data persistence even when the extension is reloaded or the browser is restarted.
+
+7. Message Passing Between Tabs
+    * Tabs can communicate with each other using the extension's message passing system.
+    * This enables features like sharing data between tabs or triggering actions in specific tabs.
+
+8. Protected Features (Login Required)
+    * All features of the extension are locked until the user successfully logs in.
+    * Unauthorized users cannot access or trigger any functionality.
+
+9. Availability on Specific URLs
+    * The extension operates only on certain web pages (e.g., https://ds-extension-poc.netlify.app/).
+    * It can also be configured to work on all web pages if required.
+
+10. Alarms for Periodic Tasks
+    * The extension uses alarms to trigger specific functions periodically.
+    * For example, periodic API calls can fetch updated data or refresh the UI.
+
+11. Options Page for Login and Settings
+    * A dedicated options page allows users to log in or configure settings for the extension.
+    * This page provides a clean interface for managing preferences.
+
+12. Graphs and Charts for Data Visualization
+    * The extension uses ShadCN and Tailwind CSS for creating responsive and visually appealing interfaces.
+    * Includes the ability to display charts (line, area, and pie charts) for data visualization.
+
+13. Dynamic Last Update and Next Update Display
+    * The extension shows the last updated time and calculates the next update time for data.
+    * This helps users understand when new data will be available.
+
+14. Countdown Timer for Next Update
+    * A live countdown timer displays the time left for the next update.
+    * This keeps users informed and improves the user experience.
+
+15. OnClick Screen Grab for Charts
+    * Users can capture a screenshot of the charts section or any specific div on the webpage.
+    * This feature makes it easy to save or share important visual data.
+
+16. Tailwind CSS for Modern Styling
+    * Tailwind CSS is used for consistent, modern, and responsive styling across the extension.
+    * Provides an elegant and seamless user interface.

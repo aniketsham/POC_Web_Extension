@@ -1,0 +1,10 @@
+.cntr{
+    width: 16rem;
+}
+
+.headerCntr{
+    display: flex;
+    align-items: end;
+    margin-bottom: 15px;
+    gap: 5px;
+}
